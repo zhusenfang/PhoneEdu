@@ -1,0 +1,156 @@
+
+
+@font-face {
+  font-family: 'fzxk';
+  src: url('fonts/fzxk_GBK.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hwkt';
+  src: url('fonts/hwkt.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+lable ,input,select{
+    font-size: 100%;
+}
+ 
+body{
+    font-size: 100%;
+    font-family: "Microsoft YaHei"; 
+    color: #535353;
+    box-sizing: border-box;
+}
+
+.login_bg{ 
+    text-align: center; 
+    opacity: 0.9;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #D6BFBF;
+    height: 80px;
+
+}
+ 
+
+a{
+    text-decoration: none;
+    color:#374782;
+}
+
+
+/******--- 紧急通知 ---******/
+        div#bgdiv{ 
+            position:fixed; 
+            width:100%;
+            top:20%;   
+            left:5%;
+            z-index:-1; 
+            border:0; 
+            bottom:0%;
+            } 
+        div#bgdiv > img {  
+            width:90%; 
+            height: 90%;
+            border:0; 
+        }
+        .header {  
+            position:fixed;  
+            width: 90%;  
+            left:5%;
+            top: 12%;  
+            z-index:3; 
+            border:0;   
+        }
+        .header_logo {
+            width: 30%;    
+            padding-left: 3em;
+            font-size: 2em;
+            font-family: fzxk;
+
+        }
+        .header_title {
+            text-align:center;
+            font-family:fzxk; 
+            font-size: 2.5em;
+
+        }
+        .footer {  
+            position:fixed;  
+            text-align:center; 
+            width:100%;
+            bottom:15px;
+            font-size: 1.2em;
+            font-family:hwkt; 
+        }
+        .datafont { 
+            font-family:hwkt; 
+            font-size: 1.1em; 
+        }
+        .header_logo img {  height: 80px; text-align:left;  vertical-align:middle;} 
+
+        .header_date {
+            font-size: 1.2em;
+             width: 250px;
+             vertical-align: middle;
+             padding-right: 30px;
+             text-align: center; 
+        }
+        .header_weather {  width: 205px;   }
+          
+        #weather_current{ 
+            font-size: 2.5em;
+            font-family: Arial;
+        }
+
+        .main {
+            font-family:fzxk;   
+            position:fixed; 
+            top:26%;
+            width:60%;
+            left:20%;    
+            font-weight: 100;
+            font-size: 2em;
+        }
+        .main h1{ 
+            font-weight: 100;
+            font-size: 2em;
+            text-align:center;
+            color: #843B3B;
+        }
+        .content_p {
+            font-family: fzxk; 
+            margin: 1em;
+            text-indent: 2em;
+            font-size: 1em;
+            height: 13em;
+            overflow: hidden;
+            white-space: pre;
+        }
+/******--- 紧急通知 ---******/
+
+
+
+     .kqdiv {
+        position: absolute;
+        left: -1000px;
+     }
+
+        .hi-video {
+            width: 100%;
+            height: 680px;
+        }
+        .bluebutton {
+            font-size: 100%;
+            background-color: #7A85B7;
+            color: #fff;
+            font-weight: 700;
+            width:30%;
+        }

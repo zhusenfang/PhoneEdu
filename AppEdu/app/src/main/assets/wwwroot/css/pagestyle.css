@@ -1,0 +1,30 @@
+
+.wrapper {
+	width: 80%; 
+	margin: auto; 
+}
+.wrapper .image {
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    margin-right: 15px;
+    margin-top: 15px;
+    background-color: #EEE;
+}
+.wrapper .image img {
+    width: 200px;
+    height: 190px;
+
+}
+
+.wrapper .caption {
+	font-size: 0.5em;
+	padding: 4px;
+    height: 2em;
+    overflow: hidden;
+}
+.wrapper ul {
+	margin-left: 2em;
+}

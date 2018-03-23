@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title></title>  
+    <link href="../../css/bootstrap.css" rel="stylesheet" />
+    <link href="../../css/animate.min.css" rel="stylesheet" /> 
+    <link href="../../dist/css/swiper.css" rel="stylesheet" />
+    <link href="../../css/blue.css" rel="stylesheet" />
+     
+    <script src="../../js/jquery-1.8.3-min.js"></script> 
+    <script src="../../js/common.js"></script>  
+    <script src="../../js/jquery.jsonp-2.1.4.min.js"></script> 
+    <style>
+       html,body{height: 100%;color:#000;padding:0px;margin:0px;}
+       #main {
+                padding:0px;
+                margin:auto;
+                font-family: hwkt;
+                height: 98%;
+                text-align: center;
+                font-size: 1.1em;
+        }
+        select ,input{
+            text-transform: none;
+            width: 10em;
+            background: #3F7286;
+        }
+        option {
+            font-size: 0.5em;
+        }
+        body{
+            background: url(../../css/images/bg.jpg);
+            background-color: #a2adc5;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" class="main">   
+        <div>
+            <div style="width: 100%;  padding-top:50%;   text-align: left;">服务器地址：</div>
+
+            <input type="text" id="serverip" style="width: 98%;height:1.5em;margin-top:15px;background: #5ea5ce;" value="http://192.168.1.100"  />
+        </div>
+        <div style="margin-top:10%;">
+            <input class="bluebutton" style="width:30%;height: 2em;" type="button" onclick="SetServerIP()" value="提  交"  />
+            <input class="bluebutton" style="width:30%;height: 2em;" type="button" onclick="ECPJS.initsystem();" value="返  回"  />
+        </div>
+    </div> 
+    <script>
+        $(document).ready(function () { 
+             var serverip = ECPJS.getserverip();
+             if(serverip=="null"){ $("#serverip").val("http://192.168.1.100");}
+             else{$("#serverip").val(serverip);}
+
+        });
+        function SetServerIP() {
+            var str_url = $("#serverip").val();
+            if (IsURL(str_url)) {
+                var serverip = ECPJS.setserverip(str_url);
+                if (serverip == str_url) {
+                    ECPJS.initsystem();
+                }
+                else { alert("服务器地址配置失败！"); }
+            }
+            else { alert("请输入有效服务器地址！"); }
+        }
+
+    </script>
+</body>
+</html>

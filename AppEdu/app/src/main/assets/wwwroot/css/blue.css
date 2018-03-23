@@ -1,0 +1,123 @@
+
+@font-face {
+  font-family: 'fzxk';
+  src: url('fonts/fzxk_GBK.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hwkt';
+  src: url('fonts/hwkt.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+    
+a,a:hover{
+    text-decoration: none;
+    color:#fff; 
+}
+
+
+     *{ margin: 0; padding: 0; }
+     
+    body{
+        font-size: 100%; 
+        box-sizing: border-box; 
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif; 
+        color:#fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    #loading {
+        background:#fff;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        padding-left:30%;
+        padding-top:3em;
+        left: 0px;
+        bottom: 0%;
+        z-index: 400;
+        border: 0;
+    }  
+    div#bgdiv{ position:fixed;  width:100%;   top:0%;    left:0%; z-index:-1;  border:0; bottom:0%; }  
+    div#bgdiv > img { width:100%;  height: 100%; border:0;  }
+     
+    .datafont {  font-family:hwkt;  font-size: 1.1em;  }
+    .header_logo img {  height: 80px; text-align:left;  vertical-align:middle;}  
+    .header_date {  font-size: 1.2em; width: 250px; vertical-align: middle;  padding-right: 30px; text-align: center;  } 
+     #weather_current{   font-size: 2.5em; font-family: Arial;  } 
+     .header_title { text-align: left; padding-left: 1em; font-family: fzxk;  font-size: 2.7em; }
+     .header_weather { width: 11em; }
+     .header { position:  relative;  width: 100%; left: 0%; top: 3em; z-index: 3; border: 0; }
+
+     #main { width: 90%; margin-left:5%; margin-top:4em; }
+     .footer { position: fixed; text-align: center;z-index: 4;  width: 100%; bottom: 2em; height: 2.2em; line-height: 2.2em;  font-size: 1.8em; font-family: hwkt; } 
+      
+     /* swiper 滑动效果 */
+    .swiper-container { width: 100%; padding-top: 50px; padding-bottom: 50px; } 
+    .swiper-slide {  background-position: center;  background-size: cover; width: 40%; height: 37em;  border-radius:1em; overflow:hidden; } 
+    .swiper-pagination-custom { 
+        bottom: 0em;
+        position: relative;
+        left: 0;
+        width: 100%;
+        margin-top: 1em;
+        height: 2em;
+        line-height: 2em;
+        font-size: 1.8em;
+        font-family: hwkt;
+        color: #fff;
+   }
+     /* swiper 滑动效果 */
+
+      /* 弹出框效果 */
+    .modal-dialog {  margin: 5% auto; }
+    .modal-body {  background-color: #fff;  }
+    .modal-header {  background-color: #3D7C92;   }
+     /* 弹出框效果 */
+      
+     /* 底部导航 */
+     .leader { width:24em; text-align:center; margin: 0px auto; }
+     .leader li { list-style:none; float:left; text-align:center; width:15%; }
+     .leader .lactive { border-bottom: 2px #fff solid; }
+     /* 底部导航 */
+
+     /* 两个新闻列表 */
+     .newli li {
+        list-style:none; 
+        height:2.5em;
+        line-height:2.5em; 
+        border-bottom:dotted 1px #fff;
+        width: 100%;
+        overflow:hidden;
+        white-space: nowrap; 
+        text-overflow: ellipsis;  
+        -o-text-overflow: ellipsis;
+     } 
+     .hdli table { width:100%; }
+     .hdli img { width:4em; height:4em; } 
+     .hdli li {
+        list-style:none; 
+        height:4.5em; 
+        border-bottom:dotted 1px #fff;
+        width: 100%;
+        overflow:hidden;
+        margin-top:1em;
+        white-space: nowrap; 
+        text-overflow: ellipsis;  
+        -o-text-overflow: ellipsis;
+        
+     }
+     .hdli_f {
+         font-size: 0.7em;
+         padding-left:1.5em;
+     }
+     .hdli_t {
+        padding-left:1em;
+     } 
+      /* 两个新闻列表 */
